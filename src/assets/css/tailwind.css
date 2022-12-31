@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+  .shadow-solid-black {
+    box-shadow: 5px 4px black;
+  }
+  .shadow-solid-black:hover {
+    box-shadow: 3px 2px black;
+  }
+  .section-home {
+    background-image: url(../images/bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@layer components {
+  .box {
+    @apply rounded-xl border-2 border-black;
+  }
+  .wibux2-button {
+    @apply flex items-center justify-center gap-2 min-w-[112px] px-3 h-11 rounded-md border border-black text-white uppercase font-bold transition;
+  }
+}
